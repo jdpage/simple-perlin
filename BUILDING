@@ -1,0 +1,8 @@
+I used the following to build (on Linux)
+
+gcc -ljpeg -lm -o perlin perlin.c
+
+However, the important thing is that you link against the math library and libjpeg.
+
+This should work on Windows (only uses stdio, stdlib, math, and the cross-platform libjpeg), but I haven't tested it.
+
